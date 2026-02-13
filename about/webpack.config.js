@@ -38,8 +38,18 @@ module.exports = {
         "./About": "./src/About",
       },
       shared: {
-        react: { singleton: true, eager: true },
-        "react-dom": { singleton: true, eager: true },
+        react: {
+          singleton: true,
+          eager: true,
+          requiredVersion: "16.0.0",
+          strictVersion: true,
+        },
+        "react-dom": {
+          singleton: true,
+          eager: true,
+          requiredVersion: "16.0.0",
+          strictVersion: true,
+        },
       },
     }),
     new HtmlWebpackPlugin({

@@ -40,8 +40,18 @@ module.exports = {
         about: "about@http://localhost:3003/remoteEntry.js",
       },
       shared: {
-        react: { singleton: true, eager: true },
-        "react-dom": { singleton: true, eager: true },
+        react: {
+          singleton: true,
+          eager: true,
+          requiredVersion: "^18.0.0",
+          strictVersion: true,
+        },
+        "react-dom": {
+          singleton: true,
+          eager: true,
+          requiredVersion: "^18.0.0",
+          strictVersion: true,
+        },
         "react-router-dom": { singleton: true, eager: true },
       },
     }),
