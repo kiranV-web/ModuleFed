@@ -1,29 +1,9 @@
 import React from "react";
 
-const Home = ({ inputValue, setInputValue }) => {
+const Home = () => {
   return (
     <section style={{ padding: "40px 20px", maxWidth: "800px", margin: "0 auto" }}>
       <h1 style={{ fontSize: "2.5rem", marginBottom: "24px" }}>Welcome to Our Website</h1>
-
-      <div style={{ marginBottom: "30px", padding: "20px", background: "#f5f5f5", borderRadius: "8px" }}>
-        <label style={{ display: "block", marginBottom: "8px", fontWeight: "bold" }}>
-          Enter your message (shared across pages):
-        </label>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Type something..."
-          style={{
-            width: "100%",
-            padding: "12px",
-            fontSize: "1rem",
-            border: "1px solid #ccc",
-            borderRadius: "4px",
-            boxSizing: "border-box",
-          }}
-        />
-      </div>
 
       <h2 style={{ fontSize: "1.5rem", marginBottom: "12px" }}>About Our Services</h2>
       <p style={{ lineHeight: "1.6", marginBottom: "20px" }}>

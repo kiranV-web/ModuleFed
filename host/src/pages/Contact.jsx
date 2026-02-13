@@ -1,15 +1,9 @@
 import React from "react";
 
-const Contact = ({ inputValue }) => {
+const Contact = () => {
   return (
     <section style={{ padding: "40px 20px", maxWidth: "800px", margin: "0 auto" }}>
       <h1 style={{ fontSize: "2.5rem", marginBottom: "24px" }}>Contact Us</h1>
-
-      {inputValue && (
-        <div style={{ padding: "16px", background: "#e0f2fe", borderRadius: "8px", marginBottom: "20px" }}>
-          <strong>Message from Home:</strong> {inputValue}
-        </div>
-      )}
 
       <p style={{ lineHeight: "1.6", marginBottom: "20px" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. We would love to hear
