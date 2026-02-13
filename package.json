@@ -1,0 +1,16 @@
+{
+  "name": "module-federation-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix host && npm install --prefix header && npm install --prefix banner && npm install --prefix about",
+    "start:header": "npm start --prefix header",
+    "start:banner": "npm start --prefix banner",
+    "start:about": "npm start --prefix about",
+    "start:host": "npm start --prefix host",
+    "start": "concurrently \"npm run start:header\" \"npm run start:banner\" \"npm run start:about\" \"npm run start:host\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
