@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../../host/src/context/GlobalContext";
 
 const About = ({ sharedMessage }) => {
+  const {value} = useContext(GlobalContext);
   return (
     <section style={{ padding: "40px 20px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1>Value: {value}</h1>
       <h2 style={{ fontSize: "2rem", marginBottom: "16px" }}>About Us</h2>
 
       {sharedMessage && (

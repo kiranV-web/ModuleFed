@@ -41,8 +41,8 @@ module.exports = {
         react: {
           singleton: true,
           eager: true,
-          requiredVersion: "16.0.0",
-          strictVersion: true,
+          requiredVersion: false,
+          strictVersion: false,
         },
         "react-dom": {
           singleton: true,

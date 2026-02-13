@@ -39,12 +39,15 @@ module.exports = {
         banner: "banner@http://localhost:3002/remoteEntry.js",
         about: "about@http://localhost:3003/remoteEntry.js",
       },
+      exposes: {
+        "./GlobalContext": "./src/context/GlobalContext"
+      },
       shared: {
         react: {
           singleton: true,
           eager: true,
-          requiredVersion: "^18.0.0",
-          strictVersion: true,
+          requiredVersion: false,
+          strictVersion: false,
         },
         "react-dom": {
           singleton: true,

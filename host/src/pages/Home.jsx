@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
+import { GlobalContext } from "../context/GlobalContext";
 
 const Home = () => {
+  const {value, setValue} = useContext(GlobalContext);
   return (
     <section style={{ padding: "40px 20px", maxWidth: "800px", margin: "0 auto" }}>
+
+      <input value={value} type="text" onChange={(e) => setValue(e.target.value)} />
       <h1 style={{ fontSize: "2.5rem", marginBottom: "24px" }}>Welcome to Our Website</h1>
 
       <h2 style={{ fontSize: "1.5rem", marginBottom: "12px" }}>About Our Services</h2>
