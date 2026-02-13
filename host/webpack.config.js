@@ -40,7 +40,7 @@ module.exports = {
         about: "about@http://localhost:3003/remoteEntry.js",
       },
       exposes: {
-        "./GlobalContext": "./src/context/GlobalContext"
+        "./GlobalContext": "./src/context/GlobalContext",
       },
       shared: {
         react: {
